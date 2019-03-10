@@ -29,7 +29,7 @@ if args.mode == 'en':
 					pdfWriter.appendPagesFromReader(pdfReader)
 					pdfWriter.encrypt(args.password)
 					
-					encryptedFilename = filename + '_encrypted' + ext
+					encryptedFilename = '{}_encrypted{}'.format(filename, ext)
 					encryptedFile = open(os.path.join(dir, encryptedFilename), 'wb')
 					pdfWriter.write(encryptedFile)
 					encryptedFile.close()
@@ -62,7 +62,7 @@ elif args.mode == 'de':
 					pdfWriter = PyPDF2.PdfFileWriter()				
 					pdfWriter.appendPagesFromReader(pdfReader)
 					
-					pdfFilename = filename + '_decrypted' + ext
+					pdfFilename = '{}_decrypted{}'.format(filename, ext)
 					pdfFile = open(os.path.join(dir, pdfFilename), 'wb')
 					pdfWriter.write(pdfFile)
 					print('{} decrypted successfully'.format(file))

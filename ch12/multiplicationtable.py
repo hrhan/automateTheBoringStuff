@@ -27,7 +27,7 @@ for row in range(2, args.number+2):
 	for col in range(2, args.number+2):
 		sheet.cell(row = row, column = col).value = (row-1)*(col-1)	
 
-excelFile = 'multiplication_{0}.xlsx'.format(args.number)		
+excelFile = 'multiplication_{}.xlsx'.format(args.number)		
 wb.save(excelFile)
 print('Saved {} to {}'.format(excelFile, getcwd()))
 	
