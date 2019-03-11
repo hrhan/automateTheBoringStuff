@@ -1,0 +1,5 @@
+# This is an example input file for randChoreAssign.py
+# All comments are skipped but make sure the first line following any comments is the list of emails
+# and the list of chores follow right after it.
+example@hotmail.com, email@gmail.com, file@gmail.com, for@gmail.com, randChoreAssign@hotmail.com
+dishes, bathroom, vacuum, walk dog, laundry, grocery shopping
