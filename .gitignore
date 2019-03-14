@@ -1,2 +1,4 @@
-ch16/myTwilioInfo.txt
+*.txt
 *.db
+abwp
+*/__pycache__
